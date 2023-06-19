@@ -15,3 +15,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`This app is listening on  http://localhost:${PORT}`);
 });
+
+// FullStack -> develop website for you
+// Devops -> creates CI/CD pipeline for dev teams and ops teams
