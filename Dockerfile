@@ -5,16 +5,16 @@ FROM node
 ENV DB_USER=admin
 ENV DB_PASS=password
 
-# execute commands on container
+# execute commands (inside container)
 RUN mkdir -p /home/app
 
 # executes on host
 COPY . /home/app/
 
-# change working directory
+# change working directory (inside container)
 WORKDIR /home/app
 
-# execute commands on container
+# execute commands (inside container)
 CMD ["npm", "start"]
 
 
