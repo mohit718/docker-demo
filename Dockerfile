@@ -14,7 +14,9 @@ COPY . /home/app/
 # change working directory
 WORKDIR /home/app
 
+
 # execute commands on container
+CMD ["node", "install"]
 CMD ["node", "server.js"]
 
 
